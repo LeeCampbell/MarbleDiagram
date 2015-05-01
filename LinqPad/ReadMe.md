@@ -23,9 +23,10 @@ An image like this is produced.
  	* Ensuring  MarbleDiagramGenerator.linq is either in the current directory, or provide a fully qualified path to it
  	* Ensuring lprun.exe is in your PATH, or has a fully qualified path  
 
-An example of a working command is 
+An example of a working command is (run from this directory in your local git repo)
 
-	C:\Users\lee.campbell\Downloads>"C:\Program Files (x86)\LINQPad4\lprun" "C:\Users\lee.campbell\Documents\GitHub\MarbleDiagram\LinqPad\MarbleDiagramGenerator.linq" "C:\Users\lee.campbell\Documents\MarbleDiagrams\Marble_0to4.txt"
+	C:\GitHub\MarbleDiagram\LinqPad>"C:\Program Files (x86)\LINQPad4\lprun" MarbleDiagramGenerator.linq ..\SampleInputFiles\Marble_0to4.txt
+
 
 The image will be created and saved to the same location as the input file.
 In this case it would create and image at `C:\Users\lee.campbell\Documents\MarbleDiagrams\Marble_0to4.png`
