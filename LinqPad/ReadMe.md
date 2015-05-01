@@ -12,7 +12,7 @@ when processed by `MarbleDiagramGenerator.linq` with a command like
 
 An image like this is produced.
 
-![Marble diagram of the Take(3) operator applied to an Interval sequence](./resources/Marble_Take3.png)
+![Marble diagram of the Take(3) operator applied to an Interval sequence](./resources/Marble_Take3.png?raw=true)
 
 ##How do I use it?
 
