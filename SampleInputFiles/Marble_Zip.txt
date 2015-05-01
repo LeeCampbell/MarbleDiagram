@@ -1,0 +1,7 @@
+{ints      }-0-1-2-3-4-]
+{          } | | | | | 
+{chars     }-A-B-C-D-E-]
+{          } | | | | | 
+{zip       } (pair) (pair) (pair) (pair) (pair)
+{          } | | | | | 
+{result    }-(0A)-(1B)-(3C)-(4D)-(5E)-]

@@ -12,7 +12,7 @@ when processed by `MarbleDiagramGenerator.linq` with a command like
 
 An image like this is produced.
 
-![Marble diagram of the Take(3) operator applied to an Interval sequence](https://raw.githubusercontent.com/LeeCampbell/MarbleDiagram/master/LinqPad/Resources/Marble_Take3.png)
+![Marble diagram of the Take(3) operator applied to an Interval sequence](https://raw.githubusercontent.com/LeeCampbell/MarbleDiagram/master/Resources/Marble_Take3.png)
 
 ##How do I use it?
 
@@ -47,6 +47,23 @@ At the more complex end of the tool's ability is to take a file like this and pr
 	{          } | | |   | | |   | | | 
 	{result    }-(1x)-(1y)-(1z)---(2x)-(2y)-(2z)---(3x)-(3y)-(3z)-]
 
+*Output:*
+
+![Marble diagram of the Take(3) operator applied to an Interval sequence](https://raw.githubusercontent.com/LeeCampbell/MarbleDiagram/master/Resources/Marble_CartesianProduct.png)
+
 I have found that diagrams that are larger and more complex than this tend to loose meaning and should be broken down into more simple concepts.
 This allows you to focus on on breaking problems down into smaller parts.
 It also has the side effect of keeping this tool simple.
+
+##Format
+
+The format is broken in to lines.
+Each line is made of the following parts :
+
+1. Sequence Name wrapped by curly braces e.g. `{s1}`
+2. unit of time represented by a dash i.e. `-`
+3. single character value e.g. `1` or `a`
+4. multi value character wrapped by parenthesis - e.g. `(foo)`
+5. erroneous sequence termination a.k.a OnError represented by the reserved character 'x' - i.e. `x` 
+6. natural sequence termination a.k.a OnComplete represented by the reserved character ']' - i.e. `]`
+7. Pipe representing a fall through of a value from an above sequence - e.g. `|`
