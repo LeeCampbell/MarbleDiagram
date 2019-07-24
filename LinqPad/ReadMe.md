@@ -2,30 +2,54 @@
 
 Given a text file `Marble_Take3.txt` like
 
-	{source     }-0-1-2-3-4-]
-	{           } | | | 
-	{result     }-0-1-2-]
+```text
+{source     }-0-1-2-3-4-]
+{           } | | | 
+{result     }-0-1-2-]
+```
 
 when processed by `MarbleDiagramGenerator.linq` with a command like
 
-	> lprun MarbleDiagramGenerator.linq Marble_Take3.txt
+```shell
+> lprun .\LinqPad\MarbleDiagramGenerator.linq .\sampleInputFiles\Marble_Take3.txt
+```
 
 An image like this is produced.
 
 ![Marble diagram of the Take(3) operator applied to an Interval sequence](https://raw.githubusercontent.com/LeeCampbell/MarbleDiagram/master/Resources/Marble_Take3.png)
 
-## How do I use it?
+## How to use it
 
- * Download and install [LinqPad](https://www.linqpad.net/)
- * *Optional* put the LinqPad install dir `C:\Program Files (x86)\LINQPad4` in your path
- * run `lprun .\MarbleDiagramGenerator.linq Your_Input_File.txt`
- 	* Replacing `Your_Input_File.txt` with the path to your input file
- 	* Ensuring  MarbleDiagramGenerator.linq is either in the current directory, or provide a fully qualified path to it
- 	* Ensuring lprun.exe is in your PATH, or has a fully qualified path  
+* Download and install [LinqPad](https://www.linqpad.net/)
+* *Optional* put the LinqPad install dir `C:\Program Files\LINQPad5` in your path
+* run `lprun .\MarbleDiagramGenerator.linq Your_Input_File.txt`
+  * Replacing `Your_Input_File.txt` with the path to your input file
+  * Ensuring  MarbleDiagramGenerator.linq is either in the current directory, or provide a fully qualified path to it
+  * Ensuring lprun.exe is in your PATH, or has a fully qualified path  
 
-An example of a working command is (run from this directory in your local git repo)
+### Sample commands
 
-	C:\GitHub\MarbleDiagram\LinqPad>"C:\Program Files (x86)\LINQPad4\lprun" MarbleDiagramGenerator.linq ..\SampleInputFiles\Marble_0to4.txt
+Each of these sampel assume you are running from this directory.
+
+DOS Command Prompt:
+
+```
+C:\GitHub\MarbleDiagram\LinqPad>"C:\Program Files\LINQPad5\lprun" MarbleDiagramGenerator.linq ..\SampleInputFiles\Marble_0to4.txt
+```
+
+Powershell Prompt:
+
+```PS
+& "C:\Program Files\LINQPad5\lprun.exe" MarbleDiagramGenerator.linq ..\SampleInputFiles\Marble_0to4.txt
+```
+
+or if you have `lprun` on your path, then just (in either DOS Command Prompt or Powershell)
+
+```PS
+lprun MarbleDiagramGenerator.linq ..\SampleInputFiles\Marble_0to4.txt
+```
+
+Each of these will create a `Marble_0to4.png` file in _./sampleInputFiles/_ directory (i.e. next to the source file).
 
 
 The image will be created and saved to the same location as the input file.
@@ -40,13 +64,15 @@ The format was more an evolution than a design.
 
 At the more complex end of the tool's ability is to take a file like this and produce and output.
 
-    {ints      }-1-------2-------3-]
-	{          } |       |       |
-	{chars     }-x-y-z-] |       |
-	{          } | | |  -x-y-z-] |
-	{          } | | |   | | |  -x-y-z-]
-	{          } | | |   | | |   | | | 
-	{result    }-(1x)-(1y)-(1z)---(2x)-(2y)-(2z)---(3x)-(3y)-(3z)-]
+```text
+{ints      }-1-------2-------3-]
+{          } |       |       |
+{chars     }-x-y-z-] |       |
+{          } | | |  -x-y-z-] |
+{          } | | |   | | |  -x-y-z-]
+{          } | | |   | | |   | | | 
+{result    }-(1x)-(1y)-(1z)---(2x)-(2y)-(2z)---(3x)-(3y)-(3z)-]
+```
 
 *Output:*
 
