@@ -11,7 +11,7 @@
   <Reference>&lt;RuntimeDirectory&gt;\wpf\UIAutomationTypes.dll</Reference>
   <Reference>&lt;RuntimeDirectory&gt;\System.Configuration.dll</Reference>
   <Reference>&lt;RuntimeDirectory&gt;\Accessibility.dll</Reference>
-  <NuGetReference>Rx-Main</NuGetReference>
+  <NuGetReference>System.Reactive</NuGetReference>
   <Namespace>System</Namespace>
   <Namespace>System.Reactive</Namespace>
   <Namespace>System.Reactive.Concurrency</Namespace>
