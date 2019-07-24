@@ -1,4 +1,4 @@
-#Marble Diagram generator from LinqPad
+# Marble Diagram generator from LinqPad
 
 Given a text file `Marble_Take3.txt` like
 
@@ -14,7 +14,7 @@ An image like this is produced.
 
 ![Marble diagram of the Take(3) operator applied to an Interval sequence](https://raw.githubusercontent.com/LeeCampbell/MarbleDiagram/master/Resources/Marble_Take3.png)
 
-##How do I use it?
+## How do I use it?
 
  * Download and install [LinqPad](https://www.linqpad.net/)
  * *Optional* put the LinqPad install dir `C:\Program Files (x86)\LINQPad4` in your path
@@ -31,7 +31,7 @@ An example of a working command is (run from this directory in your local git re
 The image will be created and saved to the same location as the input file.
 In this case it would create and image at `C:\Users\lee.campbell\Documents\MarbleDiagrams\Marble_0to4.png`
 
-##Input format
+## Input format
 
 The `MarbleDiagramGenerator.linq` file is a LinqPad script file that allows you to generate Marble diagrams in png form. It supports simple, small diagrams which I mainly use for adding to presentation slide decks.
 
@@ -56,7 +56,7 @@ I have found that diagrams that are larger and more complex than this tend to lo
 This allows you to focus on on breaking problems down into smaller parts.
 It also has the side effect of keeping this tool simple.
 
-##Format
+## Format
 
 The format is broken in to lines.
 Each line is made of the following parts :
